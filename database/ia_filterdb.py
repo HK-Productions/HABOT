@@ -16,11 +16,8 @@ instance = Instance.from_db(db)
 @instance.register
 class Media(Document):
     file_id = fields.StrField(attribute='_id')
-    file_ref = fields.StrField(allow_none=True)
     file_name = fields.StrField(required=True)
     file_size = fields.IntField(required=True)
-    file_type = fields.StrField(required=True)
-    mime_type = fields.StrField(allow_none=True)
     caption = fields.StrField(allow_none=True)
 
     class Meta:
@@ -31,18 +28,15 @@ async def save_file(media):
     """Save file in database"""
 
     # TODO: Find better way to get same file_id for same media to avoid duplicates
-    file_id, file_ref = unpack_new_file_id(media.file_id)
-    #file_id = unpack_new_file_id(media.file_id)
+    file_id = unpack_new_file_id(media.file_id)
     file_name = re.sub(r"@\w+|(_|\-|\.|\+)", " ", str(media.file_name))
     file_caption = re.sub(r"@\w+|(_|\-|\.|\+)", " ", str(media.caption))
     try:
         file = Media(
             file_id=file_id,
             file_name=file_name,
-            file_ref=file_ref,
-            file_size=file_size,
-            file_type=file_type,
-            mime_type=mime_type
+            file_size=media.file_size,
+            caption=file_caption
         )
     except ValidationError:
         print(f'Saving Error - {file_name}')
@@ -58,7 +52,6 @@ async def save_file(media):
             return 'suc'
 
 async def get_search_results(query, max_results=MAX_BTN, offset=0, lang=None):
-    query = str(query) # to ensure the query is string to stripe.
     query = query.strip()
     if not query:
         raw_pattern = '.'
@@ -73,9 +66,6 @@ async def get_search_results(query, max_results=MAX_BTN, offset=0, lang=None):
 
     filter = {'file_name': regex}
     cursor = Media.find(filter)
-
-    if file_type:
-        filter['file_type'] = file_type
 
     # Sort by recent
     cursor.sort('$natural', -1)
@@ -99,9 +89,6 @@ async def get_search_results(query, max_results=MAX_BTN, offset=0, lang=None):
         next_offset = ''       
     return files, next_offset, total_results
     
-def encode_file_ref(file_ref: bytes) -> str:
-    return base64.urlsafe_b64encode(file_ref).decode().rstrip("=")
-
 async def delete_files(query):
     query = query.strip()
     if not query:
@@ -151,5 +138,4 @@ def unpack_new_file_id(new_file_id):
             decoded.access_hash
         )
     )
-    file_ref = encode_file_ref(decoded.file_reference)
-    return file_id, file_ref
+    return file_id
