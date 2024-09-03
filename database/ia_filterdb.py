@@ -40,9 +40,9 @@ async def save_file(media):
             file_id=file_id,
             file_name=file_name,
             file_ref=file_ref,
-            file_size=file_size,
-            file_type=file_type,
-            mime_type=mime_type
+            file_size=media.file_size,
+            file_type=media.file_type,
+            mime_type=media.mime_type,
         )
     except ValidationError:
         print(f'Saving Error - {file_name}')
