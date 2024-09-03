@@ -91,7 +91,7 @@ SHORTLINK_URL = environ.get("SHORTLINK_URL", "mdiskshortner.link")
 SHORTLINK_API = environ.get("SHORTLINK_API", "1cf9ae3a85f3180eb45564a2a47e03f074b47a6a")
 VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
-INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mkv').split()]
+INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', '').split()]
 PM_FILE_DELETE_TIME = int(environ.get('PM_FILE_DELETE_TIME', '180'))
 
 # boolean settings
