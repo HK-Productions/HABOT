@@ -616,7 +616,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('📚 ᴀʙᴏᴜᴛ', callback_data='about')
         ],[
             #InlineKeyboardButton('💰 ᴇᴀʀɴ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏɴᴇʏ ʙʏ ʙᴏᴛ 💰', callback_data='earn')
-            InlineKeyboardButton('✦ ᴄʜᴇᴄᴋ ᴀʟʟ ɢʀᴏᴜᴘs ᴀɴᴅ ᴄʜᴀɴᴇʟs ✦', url='https://t.me/hd_movies_hub01/7')
+            InlineKeyboardButton('✦ ᴄʜᴇᴄᴋ ᴀʟʟ ɢʀᴏᴜᴘs ᴀɴᴅ ᴄʜᴀɴᴇʟs ✦', url='https://t.me/TG_UPDATES1')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
