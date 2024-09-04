@@ -57,7 +57,7 @@ async def start(client, message):
             InlineKeyboardButton('👨‍🚒 ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('📚 ᴀʙᴏᴜᴛ', callback_data='about')
         ],[
-            InlineKeyboardButton('✦ ᴄʜᴇᴄᴋ ᴀʟʟ ɢʀᴏᴜᴘs ᴀɴᴅ ᴄʜᴀɴᴇʟs ✦', url='https://t.me/hd_movies_hub01/7')
+            InlineKeyboardButton('✦ ᴄʜᴇᴄᴋ ᴀʟʟ ɢʀᴏᴜᴘs ᴀɴᴅ ᴄʜᴀɴᴇʟs ✦', url='https://t.me/TG_UPDATES1')
             #InlineKeyboardButton('💰 ᴇᴀʀɴ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏɴᴇʏ ʙʏ ʙᴏᴛ 💰', callback_data='earn')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
