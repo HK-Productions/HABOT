@@ -1,13 +1,8 @@
-<p align="center">
-  <a href="https://github.com/HA-Bots/Auto-Filter-Bot">
-    <img src="https://graph.org/file/a66dbf46acf369e26d48a.jpg" alt="Auto Filter Bot">
-  </a>
-</p>
+
 <h1 align="center">
   <b>𝘼𝙪𝙩𝙤 𝙁𝙞𝙡𝙩𝙚𝙧 𝘽𝙤𝙩</b>
 </h1>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝑊𝑒𝑙𝑐𝑜𝑚𝑒!;𝐶𝑟𝑒𝑎𝑡𝑒𝑑+𝑏𝑦+@HA_Bots;𝐴+𝑠𝑖𝑚𝑝𝑙𝑒+𝑎𝑛𝑑+𝑝𝑜𝑤𝑒𝑟𝑓𝑢𝑙+𝐵𝑜𝑡!;𝐼𝑛𝑑𝑒𝑥𝑒𝑠+𝐹𝑖𝑙𝑒𝑠+𝑎𝑏𝑜𝑣𝑒+4𝐺𝐵)](https://github.com/HA-Bots/Auto-Filter-Bot)
 
 ## 𝐹𝑒𝑎𝑡𝑢𝑟𝑒𝑠
 - [x] 𝐼𝑀𝐷𝐵 𝑇𝑒𝑚𝑝𝑙𝑎𝑡𝑒 𝑆𝑒𝑡
@@ -82,94 +77,34 @@
 * `INDEX_CHANNELS`: Username or ID of your files channels (Multiple channels can be used separated by space)
 * `LANGUAGES`: Language of your bot search (Multiple languages can be used separated by space)
 * `PICS`: Telegraph links of images to show in start message. (Multiple images can be used separated by space)
-* Check [info.py](https://github.com/HA-Bots/Auto-Filter-Bot/blob/main/info.py) for more optional variables
+* Check [info.py](https://github.com/Kushalhk) for more optional variables
 
-
-## Deploy
-<details><summary>Deploy To Heroku</summary>
-<p>
-<br>
-<b>Click the button below to deploy bot on Heroku.</b>
-<br>
-<br>
-
-<a href="https://heroku.com/deploy?template=https://github.com/HA-Bots/Auto-Filter-Bot">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy To Heroku">
-</a>
-</p>
-</details>
-
-<details><summary>Deploy To Koyeb</summary>
-<br>
-<b>Click the Deploy to Koyeb button below.</b>
-<br>
-<br>
-
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/HA-Bots/Auto-Filter-Bot&branch=main&name=Auto-Filter-Bot)
-</details>
-
-<details><summary>Deploy To Render</summary>
-<br>
-<b>
-Use these commands:
-<br>
-<br>
-• Build Command: <code>pip3 install -U -r requirements.txt</code>
-<br>
-<br>
-• Start Command: <code>python3 bot.py</code>
-<br>
-<br>
-<b>Click on the below button to deploy on render.</b>
-<br>
-<br>
-<a href="https://render.com/deploy?repo=https://github.com/HA-Bots/Auto-Filter-Bot/tree/main">
-<img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
-</a>
-</details>
-<details><summary>Deploy To VPS</summary>
-<br>
-<br>
-• Build the Docker Image:
-<br>
-<br>
-<p>
-<pre>
-sudo docker build -t auto-filter-bot .
-</pre>
-</p>
-<br>
-<br>
-• Run the Docker Container as Web App:
-<br>
-<br>
-<p>
-<pre>
-sudo docker run -d -p 80:80 --name Auto-Filter-Bot auto-filter-bot
-</pre>
-</p>
-<br>
-<br>
-</details>
 
 ## Support
 * [![Support](https://img.shields.io/static/v1?label=Support&message=Group&color=critical)](https://t.me/HA_Bots_Support)
 * [![Updates](https://img.shields.io/static/v1?label=Updates&message=Channel&color=critical)](https://t.me/HA_Bots)
 
-## Credits 
-* [![EvaMaria](https://img.shields.io/static/v1?label=EvaMaria&message=Developers&color=critical)](https://t.me/TeamEvamaria)
-* [![Hansaka](https://img.shields.io/static/v1?label=Hansaka&message=TG&color=critical)](https://t.me/Hansaka_Anuhas)
 
 ## Thanks To
  - [Pyrogram](https://github.com/pyrogram/pyrogram) and [PyroFork](https://github.com/Mayuri-Chan/pyrofork) For Telegram MTProto API Framework
  - [Contributors](https://github.com/HA-Bots/Auto-Filter-Bot/graphs/contributors) For free helps
  - And to everyone who helped
 
-## Note
- - Importing this repo instead of forking is strictly prohibited, Kindly fork and edit as your wish. Must Give Credits for [developer(s)](https://t.me/HA_Bots)
- - If you find any bugs or errors, [report](https://t.me/HA_Bots_Support) it
+<img src="https://readme-typing-svg.herokuapp.com?font=Kaushan+Script&size=40&duration=3500&color=447FF7&background=FFFFFF00&center=true&vCenter=true&width=650&height=55&lines=Hey!+It's+KUSHAL+HK+%F0%9F%91%8B%F0%9F%8F%BB;I+am+a+B.Com+Student+%F0%9F%A7%91%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB;I+am+from+Ramanagar+%F0%9F%87%AE%F0%9F%87%B3" alt="Vampire" width="650" height="55">
 
-## Disclaimer
-[![GNU General Public License v3.0](https://www.gnu.org/graphics/gplv3-with-text-136x68.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)  
-Licensed under [GNU AGPL v3.0](https://github.com/HA-Bots/Auto-Filter-Bot/blob/main/LICENSE)
-Selling The Codes To Other People For Money Is *Strictly Prohibited*.
+
+
+<div align="center">
+<br><p align="center"><b>Pʀᴏғɪʟᴇ Vɪᴇᴡᴇʀs</b></p> 
+<p align="center"><img align="center" src="https://profile-counter.glitch.me/{TG-V4MP1R3}/count.svg"/></p>
+
+<p align="center">
+<img src="https://github-stats-alpha.vercel.app/api/?username=Kushalhk&cc=000&tc=00ff00&ic=fff000&bc=fff" align="center">
+</p>
+
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Kushalhk&theme=highcontrast)](https://github.com/Kushalhk/github-readme-streak-stats)
+</div>
+
+👉 𝙘𝙤𝙣𝙩𝙖𝙘𝙩 𝙢𝙚 𝙤𝙣 𝙩𝙚𝙡𝙚𝙜𝙧𝙖𝙢
+<p align="middle">        
+<a href="https://telegram.dog/Harikushal"><img src="https://img.shields.io/badge/Tᴇʟᴇɢʀᴀᴍ-purple.svg?logo=telegram"></a>
