@@ -76,8 +76,8 @@ SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/Kr_Movie2')
 OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://t.me/TG_BOTS_UPDATE")
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/+NABTLpcBvvU3MGY9')
 FILMS_LINK = environ.get('FILMS_LINK', 'https://telegram.me/+xJVMXcAJbgE4MGQ1')
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/+tlQ5RkB4Z7wzYmE1")
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://telegram.me/+n3NZ2hc1cbs0ZDJl")
+TUTORIAL = environ.get("TUTORIAL", "https://telegram.me/TG_Bots_Support/216")
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://telegram.me/TG_Bots_Support/216")
 
 # Bot settings
 DELETE_TIME = int(environ.get('DELETE_TIME', 3600)) # Add time in seconds
@@ -87,16 +87,16 @@ LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', 'hindi en
 QUALITY = [quality.lower() for quality in environ.get('QUALITY', 'Hdrip Web-Dl Bluray HDR FHD 240P 480P 540P 720P 1080P 1440P 2K 2160P 4K').split()]
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 FILE_CAPTION = environ.get("FILE_CAPTION", script.FILE_CAPTION)
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "mdiskshortner.link")
-SHORTLINK_API = environ.get("SHORTLINK_API", "1cf9ae3a85f3180eb45564a2a47e03f074b47a6a")
-VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "yamlinks.com")
+SHORTLINK_API = environ.get("SHORTLINK_API", "741f5716fe02f7eb9aea0a1ce04c3fa67ee554cb")
+VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 7200)) # Add time in seconds
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
 INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mkv').split()]
 PM_FILE_DELETE_TIME = int(environ.get('PM_FILE_DELETE_TIME', '180'))
 
 # boolean settings
-IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', True)
-IS_VERIFY = is_enabled('IS_VERIFY', False)
+IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', False)
+IS_VERIFY = is_enabled('IS_VERIFY', True)
 AUTO_DELETE = is_enabled('AUTO_DELETE', True)
 WELCOME = is_enabled('WELCOME', True)
 PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
@@ -105,7 +105,7 @@ LINK_MODE = is_enabled("LINK_MODE", False)
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 IMDB = is_enabled('IMDB', True)
 SPELL_CHECK = is_enabled("SPELL_CHECK", True)
-SHORTLINK = is_enabled('SHORTLINK', False)
+SHORTLINK = is_enabled('SHORTLINK', True)
 
 #premium info
 PAYMENT_QR = environ.get('PAYMENT_QR', 'https://graph.org/file/259ae56fcc7fd2bdd9a82.jpg')
