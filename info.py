@@ -73,8 +73,8 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Links
 SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/Kr_Movie2')
-OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://t.me/TG_BOTS_UPDATE")
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/+NABTLpcBvvU3MGY9')
+OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://t.me/Harikushal")
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/TG_BOTS_UPDATE')
 FILMS_LINK = environ.get('FILMS_LINK', 'https://telegram.me/+xJVMXcAJbgE4MGQ1')
 TUTORIAL = environ.get("TUTORIAL", "https://telegram.me/TG_Bots_Support/216")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://telegram.me/TG_Bots_Support/216")
