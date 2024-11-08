@@ -76,8 +76,8 @@ SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/Kr_Movie2')
 OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://telegram.me/Harikushal")
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://telegram.me/TG_BOTS_UPDATE')
 FILMS_LINK = environ.get('FILMS_LINK', 'https://telegram.me/+nDTaoJGRKJcxYmZl')
-TUTORIAL = environ.get("TUTORIAL", "https://telegram.me/TG_Bots_Support/216")
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://telegram.me/TG_Bots_Support/216")
+TUTORIAL = environ.get("TUTORIAL", "https://telegram.me/TG_Bots_Support/")
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://telegram.me/TG_Bots_Support/")
 
 # Bot settings
 DELETE_TIME = int(environ.get('DELETE_TIME', 3600)) # Add time in seconds
@@ -96,7 +96,7 @@ PM_FILE_DELETE_TIME = int(environ.get('PM_FILE_DELETE_TIME', '180'))
 
 # boolean settings
 IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', False)
-IS_VERIFY = is_enabled('IS_VERIFY', True)
+IS_VERIFY = is_enabled('IS_VERIFY', False)
 AUTO_DELETE = is_enabled('AUTO_DELETE', True)
 WELCOME = is_enabled('WELCOME', True)
 PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
@@ -105,7 +105,7 @@ LINK_MODE = is_enabled("LINK_MODE", False)
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 IMDB = is_enabled('IMDB', True)
 SPELL_CHECK = is_enabled("SPELL_CHECK", True)
-SHORTLINK = is_enabled('SHORTLINK', True)
+SHORTLINK = is_enabled('SHORTLINK', False)
 
 #premium info
 PAYMENT_QR = environ.get('PAYMENT_QR', 'https://graph.org/file/259ae56fcc7fd2bdd9a82.jpg')
