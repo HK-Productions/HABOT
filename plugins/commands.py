@@ -108,9 +108,10 @@ async def start(client, message):
             await update_verify_status(message.from_user.id, verify_token=token, link="" if mc == 'inline_verify' else mc)
             link = await get_shortlink(SHORTLINK_URL, SHORTLINK_API, f'https://t.me/{temp.U_NAME}?start=verify_{token}')
             btn = [[
-                InlineKeyboardButton("🧿 Verify 🧿", url=link)
+                InlineKeyboardButton("✅ ᴠᴇʀɪғʏ ✅", url=link),
+                InlineKeyboardButton("ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ❓", url=VERIFY_TUTORIAL),
             ],[
-                InlineKeyboardButton('🗳 Tutorial 🗳', url=VERIFY_TUTORIAL)
+                InlineKeyboardButton('😁 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ 😁", callback_data='buy_premium'),
             ]]
             await message.reply("You not verified today! Kindly verify now. 🔐", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
             return
@@ -121,7 +122,7 @@ async def start(client, message):
             btn = await is_subscribed(client, message, settings['fsub'])
             if btn:
                 btn.append(
-                    [InlineKeyboardButton("🔁 Try Again 🔁", callback_data=f"checksub#{mc}")]
+                    [InlineKeyboardButton("♻️ Try Again ♻️", callback_data=f"checksub#{mc}")]
                 )
                 reply_markup = InlineKeyboardMarkup(btn)
                 await message.reply_photo(
