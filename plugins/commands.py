@@ -111,7 +111,7 @@ async def start(client, message):
                 InlineKeyboardButton("✅ ᴠᴇʀɪғʏ ✅", url=link),
                 InlineKeyboardButton("ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ❓", url=VERIFY_TUTORIAL),
             ],[
-                InlineKeyboardButton('😁 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ 😁", callback_data='buy_premium'),
+                InlineKeyboardButton("😁 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ 😁", callback_data='buy_premium'),
             ]]
             await message.reply("You not verified today! Kindly verify now. 🔐", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
             return
