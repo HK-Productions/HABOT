@@ -11,3 +11,4 @@ aiohttp
 aiofiles
 telegraph
 speedtest-cli
+dnspython==2.3.0
