@@ -4,7 +4,7 @@ import pytz
 import datetime, time
 from info import ADMINS, LOG_CHANNEL, PAYMENT_QR , OWNER_UPI_ID
 from Script import script 
-from utils import get_seconds, get_status, temp
+from utils import get_seconds, temp
 from database.users_chats_db import db 
 from pyrogram import Client, filters 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
